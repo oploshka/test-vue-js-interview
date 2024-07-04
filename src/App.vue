@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <ContentBlock/>
+      <PageUserList/>
     </v-main>
 
     <v-footer app v-bind="localAttrs">
@@ -11,14 +11,16 @@
 </template>
 
 <script>
-import ContentBlock from './components/ContentBlock';
+// import ContentBlock from './components/ContentBlock';
+import PageUserList from './components/ContentBlockV2/PageUserList.vue';
 import Footer from './components/Footer';
 
 export default {
   name: 'App',
 
   components: {
-    ContentBlock,
+    // ContentBlock,
+    PageUserList,
     Footer
   },
 
